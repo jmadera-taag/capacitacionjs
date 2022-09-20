@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Ejercicio 032</h2>
+
+    <div id="matriz">
+        01 02 03 04  <br>
+        05 06 07 08  <br>
+        09 10 11 12  <br>
+        13 14 15 16
+    </div>
+<script>
+
+    const matrizCuadrada = [
+        01, 02, 03,
+        05, 06, 07,
+        09, 10, 11,
+    ]
+    let dimensionMatriz = matrizCuadrada.length;
+    let raizCuadradaMatriz = Math.sqrt(dimensionMatriz);
+
+    console.log('raizCuadradaMatriz',raizCuadradaMatriz)
+    console.log('dimensionMatriz',dimensionMatriz)
+
+    for(i = 0; i<=(raizCuadradaMatriz-1); i++){
+        console.log(matrizCuadrada[i])
+    }
+    
+</script>
+</body>
+</html>
