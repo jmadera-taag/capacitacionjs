@@ -15,23 +15,63 @@
         09 10 11 12  <br>
         13 14 15 16
     </div>
+    <br>
+    <div id="matriz">
+        01 02 03 04 05  <br>
+        06 07 08 09 10  <br>
+        11 12 13 14 15  <br>
+        16 17 18 19 20  <br>
+        21 22 23 24 25
+    </div>
 <script>
 
-    const matrizCuadrada = [
-        01, 02, 03,
-        05, 06, 07,
-        09, 10, 11,
-    ]
-    let dimensionMatriz = matrizCuadrada.length;
+    // const matrizCuadrada = [
+    //     01, 02, 03, 04,
+    //     05, 06, 07, 08,
+    //     09, 10, 11, 12,
+    //     13, 14, 15, 16
+    // ]
+
+    // let dimensionMatriz = matrizCuadrada.length;
+    let dimensionMatriz = 4*4;
     let raizCuadradaMatriz = Math.sqrt(dimensionMatriz);
 
     console.log('raizCuadradaMatriz',raizCuadradaMatriz)
     console.log('dimensionMatriz',dimensionMatriz)
 
-    for(i = 0; i<=(raizCuadradaMatriz-1); i++){
-        console.log(matrizCuadrada[i])
+    for(i = 0; i<raizCuadradaMatriz; i++){
+        console.log(i+1)
     }
-    
+    console.log('-------')
+
+    for(i = 0; i<raizCuadradaMatriz-1; i++){
+        console.log(raizCuadradaMatriz * (2 + i))
+    }
+    console.log('-------')
+
+    for(i = 0; i<raizCuadradaMatriz-1; i++){
+        console.log((dimensionMatriz-1)-i);
+    }
+    console.log('-------')
+
+    for(i = 0; i<raizCuadradaMatriz-2; i++){
+        console.log(raizCuadradaMatriz * (2 - i)+1)
+    }
+    console.log('-------')
+
+    for(i = 0; i<raizCuadradaMatriz-2; i++){
+        console.log((raizCuadradaMatriz +2) + i)
+    }
+    console.log('-------')
+
+    for(i = 0; i<raizCuadradaMatriz-3; i++){
+        console.log((raizCuadradaMatriz*(3+i))-1  )
+    }
+    console.log('-------')
+
+    for(i = 0; i<raizCuadradaMatriz-3; i++){
+        console.log((raizCuadradaMatriz*(3+i))-2  )
+    }
 </script>
 </body>
 </html>
